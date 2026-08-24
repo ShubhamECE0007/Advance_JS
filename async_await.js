@@ -1,0 +1,69 @@
+async function fetchUserData(){
+    return  new Promise((resolve, reject) => {
+    let success  = false;
+    if(success) {
+        resolve({
+            id:2503203100121,
+            username: "shubham singh"
+            
+        });
+    }
+    else{
+        reject(new Error("Data not fetched"));
+    }
+});
+
+
+// promise1
+// .then((response)=>{
+// return response
+// })
+// .catch((error)=>{
+//     console.log(error.message);
+// });
+
+// const promise2 = new Promise((resolve,reject)=>{
+//     let success = false;
+//     if(success){
+//         resolve({
+//             ProductName: "Iphone 14 pro max",
+//             Price: 150000,
+//             Quantity: 1
+//         });
+//     }
+//     else{
+//         reject(new Error("Order not fetched"));
+//     }
+
+
+// })
+
+// promise2
+// .then((response)=>{
+//     console.log(response);
+// })
+// .catch((error)=>{
+//     console.log(error.message);
+// });
+
+// Promise.any([promise1, promise2])
+// .then((response)=>{
+//     console.log(response);
+// })
+
+// .catch((error)=>{
+//     console.log(error);
+// })
+
+
+
+}
+    async function getUser(){
+try{
+        const user = await fetchUserData();
+    console.log(user);
+}catch(error){
+    console.error(`Error: ${error.message}`);
+}
+}
+getUser();
