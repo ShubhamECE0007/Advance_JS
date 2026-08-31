@@ -1,0 +1,7 @@
+const promise1 = new promise((reolve,reject)) =>(
+lett succeess = false 
+if (success){
+    resolve{{
+    
+    }}
+}
